@@ -29,11 +29,11 @@ public class Practise4 {
         }
         return flag;
     }
-}
 
-class test4 {
     public static void main(String[] args) {
         Practise4 practise4 = new Practise4();
         System.out.println(practise4.stackJudge(new int[]{1, 2, 3}, new int[]{1, 3, 2}));
     }
 }
+
+

@@ -87,7 +87,7 @@ public class Practise2 {
 //    }
 
     //丑数
-    public int GetUglyNumber_Solution(int index){
+    public int GetUglyNumber_Solution(int index) {
         //输出第i个丑数
         int p2 = 0;
         int p3 = 0;
@@ -95,20 +95,16 @@ public class Practise2 {
         int newRes = 1;
         ArrayList<Integer> res = new ArrayList<>();
         res.add(1);
-        while(res.size()<index){
-            newRes = Math.min(res.get(p2)*2,Math.min(res.get(p3)*3,res.get(p5)*5));
-            if(newRes==res.get(p2)*2) p2++;
-            if(newRes==res.get(p3)*3) p3++;
-            if(newRes==res.get(p5)*5) p5++;
+        while (res.size() < index) {
+            newRes = Math.min(res.get(p2) * 2, Math.min(res.get(p3) * 3, res.get(p5) * 5));
+            if (newRes == res.get(p2) * 2) p2++;
+            if (newRes == res.get(p3) * 3) p3++;
+            if (newRes == res.get(p5) * 5) p5++;
             res.add(newRes);
         }
         return newRes;
     }
 
-
-}
-
-class test2 {
     public static void main(String[] args) {
         Practise2 p2 = new Practise2();
 //        Scanner in = new Scanner(System.in);
@@ -127,5 +123,7 @@ class test2 {
 //        System.out.println(p2.PrintMinNumber(new int[]{3, 32, 321}));
 
 //        System.out.println(p2.Permutation("abc"));
+
+
     }
 }
